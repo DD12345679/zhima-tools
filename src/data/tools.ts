@@ -4,6 +4,8 @@ import {
   ArrowLeftRight,
   Braces,
   KeyRound,
+  Scale,
+  CalendarDays,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -65,6 +67,26 @@ export const tools: Tool[] = [
     category: '开发工具',
     icon: KeyRound,
     keywords: ['密码', '随机', '安全', '生成'],
+  },
+  {
+    id: 'bmi',
+    name: 'BMI 计算器',
+    path: '/tools/bmi',
+    description: '输入身高体重，按中国成人标准评估 BMI 指数和标准体重范围。',
+    category: '健康计算',
+    icon: Scale,
+    keywords: ['bmi', '体重', '身高', '肥胖', '标准体重', '健康', '体脂'],
+    popular: true,
+  },
+  {
+    id: 'dates',
+    name: '日期天数计算器',
+    path: '/tools/dates',
+    description: '计算两个日期相差多少天、几个工作日，或推算 N 天前后是几号星期几。',
+    category: '日常实用',
+    icon: CalendarDays,
+    keywords: ['日期', '天数', '倒计时', '相差', '工作日', '推算', '日历'],
+    popular: true,
   },
 ]
 

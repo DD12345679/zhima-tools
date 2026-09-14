@@ -6,6 +6,8 @@ import MortgageCalculator from './pages/tools/MortgageCalculator'
 import UnitConverter from './pages/tools/UnitConverter'
 import JsonTool from './pages/tools/JsonTool'
 import PasswordGenerator from './pages/tools/PasswordGenerator'
+import BmiCalculator from './pages/tools/BmiCalculator'
+import DateCalculator from './pages/tools/DateCalculator'
 
 export default function App() {
   return (
@@ -17,6 +19,8 @@ export default function App() {
         <Route path="/tools/converter" element={<UnitConverter />} />
         <Route path="/tools/json" element={<JsonTool />} />
         <Route path="/tools/password" element={<PasswordGenerator />} />
+        <Route path="/tools/bmi" element={<BmiCalculator />} />
+        <Route path="/tools/dates" element={<DateCalculator />} />
       </Route>
     </Routes>
   )
