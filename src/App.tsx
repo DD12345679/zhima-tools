@@ -8,6 +8,8 @@ import JsonTool from './pages/tools/JsonTool'
 import PasswordGenerator from './pages/tools/PasswordGenerator'
 import BmiCalculator from './pages/tools/BmiCalculator'
 import DateCalculator from './pages/tools/DateCalculator'
+import PrepaymentCalculator from './pages/tools/PrepaymentCalculator'
+import SocialInsuranceCalculator from './pages/tools/SocialInsuranceCalculator'
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/tools/password" element={<PasswordGenerator />} />
         <Route path="/tools/bmi" element={<BmiCalculator />} />
         <Route path="/tools/dates" element={<DateCalculator />} />
+        <Route path="/tools/prepayment" element={<PrepaymentCalculator />} />
+        <Route path="/tools/social-insurance" element={<SocialInsuranceCalculator />} />
       </Route>
     </Routes>
   )

@@ -6,6 +6,8 @@ import {
   KeyRound,
   Scale,
   CalendarDays,
+  HandCoins,
+  Umbrella,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -39,6 +41,26 @@ export const tools: Tool[] = [
     category: '财务计算',
     icon: HomeIcon,
     keywords: ['房贷', '月供', '贷款', '按揭', '公积金', '还款'],
+    popular: true,
+  },
+  {
+    id: 'prepayment',
+    name: '提前还贷计算器',
+    path: '/tools/prepayment',
+    description: '对比减少月供与缩短年限两种方案，算清提前还款能省多少利息。',
+    category: '财务计算',
+    icon: HandCoins,
+    keywords: ['提前还贷', '提前还款', '房贷', '缩短年限', '减少月供', '省利息'],
+    popular: true,
+  },
+  {
+    id: 'social-insurance',
+    name: '五险一金计算器',
+    path: '/tools/social-insurance',
+    description: '输入税前月薪和缴费基数，估算五险一金明细、个税和到手工资。',
+    category: '财务计算',
+    icon: Umbrella,
+    keywords: ['五险一金', '社保', '公积金', '税后工资', '到手', '缴纳比例'],
     popular: true,
   },
   {
