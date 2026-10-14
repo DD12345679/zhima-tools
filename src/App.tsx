@@ -10,6 +10,8 @@ import BmiCalculator from './pages/tools/BmiCalculator'
 import DateCalculator from './pages/tools/DateCalculator'
 import PrepaymentCalculator from './pages/tools/PrepaymentCalculator'
 import SocialInsuranceCalculator from './pages/tools/SocialInsuranceCalculator'
+import QrcodeGenerator from './pages/tools/QrcodeGenerator'
+import EncodeTool from './pages/tools/EncodeTool'
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/tools/dates" element={<DateCalculator />} />
         <Route path="/tools/prepayment" element={<PrepaymentCalculator />} />
         <Route path="/tools/social-insurance" element={<SocialInsuranceCalculator />} />
+        <Route path="/tools/qrcode" element={<QrcodeGenerator />} />
+        <Route path="/tools/encode" element={<EncodeTool />} />
       </Route>
     </Routes>
   )

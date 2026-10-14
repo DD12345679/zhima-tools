@@ -8,6 +8,8 @@ import {
   CalendarDays,
   HandCoins,
   Umbrella,
+  QrCode,
+  Binary,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -108,6 +110,26 @@ export const tools: Tool[] = [
     category: '日常实用',
     icon: CalendarDays,
     keywords: ['日期', '天数', '倒计时', '相差', '工作日', '推算', '日历'],
+    popular: true,
+  },
+  {
+    id: 'qrcode',
+    name: '二维码生成器',
+    path: '/tools/qrcode',
+    description: '文本或网址本地生成二维码，支持自定义颜色尺寸，可下载 PNG。',
+    category: '日常实用',
+    icon: QrCode,
+    keywords: ['二维码', '生成', '网址转二维码', 'qrcode', '扫码'],
+    popular: true,
+  },
+  {
+    id: 'encode',
+    name: 'Base64 / URL / MD5 工具',
+    path: '/tools/encode',
+    description: 'Base64 编码解码、URL 编码解码、MD5 哈希计算，支持中文。',
+    category: '开发工具',
+    icon: Binary,
+    keywords: ['base64', 'url编码', '解码', 'md5', '哈希', '加密', '编码'],
     popular: true,
   },
 ]
