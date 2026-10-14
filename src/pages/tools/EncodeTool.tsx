@@ -246,7 +246,7 @@ function Md5Panel() {
 
 export default function EncodeTool() {
   return (
-    <ToolPage title="Base64 / URL 编解码 · MD5 哈希" description="Base64 编码解码、URL 编码解码、MD5 哈希计算，支持中文，全部在浏览器本地完成。">
+    <ToolPage title="Base64 / URL / MD5 工具" description="Base64 编码解码、URL 编码解码、MD5 哈希计算，支持中文，全部在浏览器本地完成。">
       <Tabs defaultValue="base64">
         <TabsList className="mb-6 grid w-full grid-cols-3 sm:w-96">
           <TabsTrigger value="base64">Base64</TabsTrigger>

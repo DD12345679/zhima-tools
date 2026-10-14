@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { ArrowLeft } from 'lucide-react'
 
@@ -9,6 +9,13 @@ interface ToolPageProps {
 }
 
 export default function ToolPage({ title, description, children }: ToolPageProps) {
+  // SEO：每个工具页设置独立的标题与描述，蜘蛛与用户标签页都能识别
+  useEffect(() => {
+    document.title = `${title} - 芝麻工具箱`
+    const meta = document.querySelector('meta[name="description"]')
+    if (meta) meta.setAttribute('content', `${description} - 芝麻工具箱，免费在线工具，无需登录，数据本地处理。`)
+  }, [title, description])
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <Link
