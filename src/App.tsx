@@ -12,6 +12,8 @@ import PrepaymentCalculator from './pages/tools/PrepaymentCalculator'
 import SocialInsuranceCalculator from './pages/tools/SocialInsuranceCalculator'
 import QrcodeGenerator from './pages/tools/QrcodeGenerator'
 import EncodeTool from './pages/tools/EncodeTool'
+import ColorConverter from './pages/tools/ColorConverter'
+import TimestampConverter from './pages/tools/TimestampConverter'
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/tools/social-insurance" element={<SocialInsuranceCalculator />} />
         <Route path="/tools/qrcode" element={<QrcodeGenerator />} />
         <Route path="/tools/encode" element={<EncodeTool />} />
+        <Route path="/tools/color" element={<ColorConverter />} />
+        <Route path="/tools/timestamp" element={<TimestampConverter />} />
       </Route>
     </Routes>
   )

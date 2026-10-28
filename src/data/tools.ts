@@ -10,6 +10,8 @@ import {
   Umbrella,
   QrCode,
   Binary,
+  Palette,
+  Clock3,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -131,6 +133,24 @@ export const tools: Tool[] = [
     icon: Binary,
     keywords: ['base64', 'url编码', '解码', 'md5', '哈希', '加密', '编码'],
     popular: true,
+  },
+  {
+    id: 'color',
+    name: '色值转换器',
+    path: '/tools/color',
+    description: 'HEX、RGB、HSL 颜色格式互相转换，实时预览，一键复制。',
+    category: '开发工具',
+    icon: Palette,
+    keywords: ['色值', '颜色', 'rgb', 'hex', 'hsl', '16进制颜色', '配色'],
+  },
+  {
+    id: 'timestamp',
+    name: 'Unix 时间戳转换',
+    path: '/tools/timestamp',
+    description: 'Unix 时间戳与日期时间互转，自动识别秒级和毫秒级。',
+    category: '开发工具',
+    icon: Clock3,
+    keywords: ['时间戳', 'timestamp', 'unix', '时间转换', '毫秒'],
   },
 ]
 
